@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #020209;
+	color: #e8eddf;
+}
+
+#menu-title {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	font-size: 3em;
+	text-align: center;
+}
+
+.card>#card1, .card>#card2, .card>#card3 {
+	background-color: #10002b;
+	width: 95%;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#lbl-card1 {
+	background-color: #003459;
+}
+
+#lbl-card2 {
+	background-color: #e71d36;
+}
+
+#lbl-card3 {
+	background-color: #f86624;
+}
+
+.card #lbl-card1,
+.card #lbl-card2,
+.card #lbl-card3 {
+	border: 1px solid black;
+	padding: 0 10px;
+	position: relative;
+	top: 0;
+	right: 0;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.item {
+	transition-property: box-shadow;
+	transition-duration: .2s;
+	transition-timing-function: ease-in;
+}
+
+.item:hover {
+	box-shadow: 0px 0px 50px -15px #333;
+}
+
+.card p {
+	clear: both;
+	font-size: 1.1em;
+	font-family: sans-serif;
+	text-align: justify;
+	padding: 15px 30px;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	
+}
+
+
+/********** Desktop version **********/
+@media (min-width: 992px) {
+	section {
+		width: 100%;
+	}
+
+	.card {
+		width: 33.33%;
+		float: left;
+	}
+}
+
+/********** Tablet version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.card:nth-child(1), .card:nth-child(2) {
+		width: 50%;
+		float: left;
+		margin-bottom: 30px;
+	}
+	.card:nth-child(3) {
+		clear: both;
+		width 100%;
+		margin: 0 -10px;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.card {
+		width: 100%;
+	}
+	.card:nth-child(1), .card:nth-child(2) {
+		margin-bottom: 15px;
+	}
+}
