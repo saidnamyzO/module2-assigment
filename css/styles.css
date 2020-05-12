@@ -8,6 +8,10 @@ body {
 	color: #e8eddf;
 }
 
+header {
+	font-family: "Open Sans","Source Sans Pro",Helvetica,sans-serif;
+}
+
 #menu-title {
 	padding-top: 20px;
 	padding-bottom: 50px;
@@ -22,10 +26,11 @@ body {
 
 .card>#card1, .card>#card2, .card>#card3 {
 	background-color: #10002b;
+	border: 5px solid black;
 	width: 95%;
-	border: 1px solid black;
 	margin: 0 auto;
 }
+
 
 #lbl-card1 {
 	background-color: #003459;
@@ -42,19 +47,24 @@ body {
 .card #lbl-card1,
 .card #lbl-card2,
 .card #lbl-card3 {
-	border: 1px solid black;
+	border-left: 2px dashed yellow;
+	border-bottom: 2px dashed yellow;
 	padding: 0 10px;
 	position: relative;
 	top: 0;
 	right: 0;
 	float: right;
 	height: 50px;
-	line-height: 50px;
+	margin: auto;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: bold;
 }
 
+#emo {
+	margin: auto 0;
+	font-size: 1.5em;
+}
 .item {
 	transition-property: box-shadow;
 	transition-duration: .2s;
@@ -64,7 +74,7 @@ body {
 .item:hover {
 	box-shadow: 0px 0px 50px -15px #333;
 	animation-name: moveCard;
-	animation-duration: .2s;
+	animation-duration: .4s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
@@ -78,6 +88,49 @@ body {
 	}
 }
 
+#imnotchinese {
+	animation-name: changeOfFashion;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changeOfFashion {
+	0% {
+		color: #FF8600;
+	}
+	25% {
+		color: #17BEBB;
+	}
+	50% {
+		color: #D62246;
+	}
+	75% {
+		color: #17B890;
+	}
+	100% {
+		color: #FF8600;
+	}
+}
+
+#isThisYou {
+	display: inline-block;
+	animation-name: ni;
+	animation-duration: .2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes ni {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
+	}
+}
+
 .card p {
 	clear: both;
 	font-size: 1.1em;
@@ -85,6 +138,7 @@ body {
 	text-align: justify;
 	padding: 15px 30px;
 }
+
 
 
 /********** Large devices only **********/
