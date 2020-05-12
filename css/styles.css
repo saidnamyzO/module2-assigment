@@ -66,6 +66,8 @@ header {
 	font-size: 1.5em;
 }
 .item {
+	border-radius: 25px;
+	overflow: hidden;
 	transition-property: box-shadow;
 	transition-duration: .2s;
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
